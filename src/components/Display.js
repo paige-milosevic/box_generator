@@ -10,14 +10,14 @@ const Display = (props) => {
         <div>
             <h1>Color Queue</h1>
             {
-                boxList.map((color, index) => {
+                boxList.map((box, index) => {
                     return(
                         <div key={index} style={{
                             display: "inline-block",
                             margin: "10px",
-                            height: "50px",
-                            width: "50px",
-                            backgroundColor: color
+                            height: box.size,
+                            width: box.size,
+                            backgroundColor: box.color
                         }}>
                         </div>
                     )
